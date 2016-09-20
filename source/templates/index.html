@@ -1,9 +1,66 @@
 {% extends '_base.html' %}
 {% block body_class %}homepage{% endblock %}
 {% block data %}{% endblock %}
-{% block content %}
 
 
-
-
+{% block panel_1 %}
+<div class="question-panel panel panel--1 js-active">
+  
+  <h2 class="question-panel__heading question-panel__content">Ask a question</h2>
+  <p class="question-panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
+  <form action="" class="form form--negative question-panel__content question-panel__form">
+    <input type="text" placeholder="Question Title">
+    <textarea name="" id=""  placeholder="Describe your problem"></textarea>
+    <div class="select select--negative">
+      <select name="" id="">
+        <option value="">Choose a Category</option>
+        <option value="">category</option>
+        <option value="">category</option>
+        <option value="">category</option>
+      </select>
+    </div>
+    <button class="button button--full button--main-color js-open-panel-2" type="submit">Send</button>
+  </form>
+  <div class="question-panel__action question-panel__content">
+    <h4 class="question-panel__action__title js-open-action-panel">How it works</h4>
+    <div class="question-panel__action__content js-panel-action">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed, sunt quisquam, sit aspernatur quam dolor? Nostrum ea recusandae dignissimos aperiam, dolore inventore magnam dolor, natus omnis debitis voluptatem nemo!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed, sunt quisquam, sit aspernatur quam dolor? Nostrum ea recusandae dignissimos aperiam, dolore inventore magnam dolor, natus omnis debitis voluptatem nemo!</p>
+    </div>
+    
+  </div>
+  {# <p><a class="js-open-panel-2"><i class="material-icons">arrow_forward</i></a></p>
+  <a class="js-close-panel-1"><i class="material-icons">arrow_back</i></a> #}
+</div>
 {% endblock %}
+
+
+
+{% block content %}
+      <div class="main-content">
+        <ul class="category-filters">
+          {% for i in categories %}
+          <li class="category-filters__item">{{i}}</li>
+          {% endfor %}
+        </ul>
+        <ul class="main-content__container list">
+          {% for i in range(20) %}
+          <li class="list__item post-item">
+            <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+            <div class="post-item__content">
+              <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+              <h3 class="post-item__title">How do I create an open data portal?</h3>
+              <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+              <div class="post-item__controls">
+                <div class="controls">
+                  <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+                  <a href="#" class="button button--small button--alpha controls__answer-count">3 Answers</a>
+                  <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endblock %}

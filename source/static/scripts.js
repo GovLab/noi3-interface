@@ -26,7 +26,9 @@ $('.js-close-panel-3').click(function () {
     $('.panel--3').removeClass('js-active');
 });
 
-
+$('.js-open-action-panel').click(function () {
+    $('.js-panel-action').toggleClass('js-active');
+});
 
 
 

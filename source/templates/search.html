@@ -1,0 +1,56 @@
+{% extends '_base.html' %}
+{% block body_class %}homepage{% endblock %}
+{% block data %}{% endblock %}
+
+
+{% block panel_1 %}
+<div class="profile-panel panel panel--1 js-active">
+  <i class="profile-panel__action-button material-icons">edit</i>
+  <img src="images/users/128.jpg" alt="" class="profile-panel__picture">
+  <hgroup class="profile-panel__titles">
+    <h2 class="profile-panel__name">Random Happy Dude</h2>
+    <h3 class="profile-panel__job">Director and Founder</h3>
+    <h4 class="profile-panel__org">UK Government</h4>  
+  </hgroup>
+  <section class="profile-panel__credentials">
+    <div class="row">
+      <div class="medium-6 small-12 column">
+        <p class="profile-panel__domains">Domains of Expertise Paruptiae latius peditatest aut maiorro eossi ini dolorrumqui deliqui demperum aspid magnatiunt</p>    
+      </div>
+      <div class="medium-6 small-12 column">
+        <p class="profile-panel__location">London, UK</p>
+        <ul class="profile-panel__lang">
+          <li class="">English</li>
+          <li class="">Spanish</li>
+          <li class="">French</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="profile-panel__projects-button">Projects <i class="material-icons js-open-panel-2">arrow_forward</i></div>
+  <div class="profile-panel__events-button">Events <i class="material-icons js-open-panel-2">arrow_forward</i></div>
+  <section class="profile-panel__expertise-panel">
+    <h5 class="profile-panel__expertise-panel-title">Expertise <i class="material-icons js-open-panel-2">arrow_forward</i></h5>
+  </section>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="main-content">
+  <div class="toast toast--yellow"> {# toast--green, toast--red, toast--gray #}
+    <i class="material-icons toast__close">close</i>
+    <h4 class="toast__heading">Titles don’t say enough</h4>
+    <p class="toast__text">Find experts to contact based on their innovation experience</p>
+  </div>
+
+  <ul class="main-content__container list">
+    {% for i in range(10) %}
+    <li class="list__item person-item">
+      
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

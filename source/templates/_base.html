@@ -16,25 +16,35 @@
 
   <body class="{% block body_class %}{% endblock %}">
     {% block data %}{% endblock %}
-    <header class="header">
-      <h1>Network of Innovators</h1>
+    <header class="top-bar">
+      <h1 class="top-bar__logo"><img src="/images/noi-logo-white.svg" alt="Network of Innovators"></h1>
+      <form class="top-bar__search search search--negative search--fixed js-target-search" action="">
+          <input class="search__field" type="text">
+          <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+      </form>
+      <div class="top-bar__user-menu user-menu">
+        {# use "user-menu__item--highlighted" class when we have notifications for the user #}
+        <span class="user-menu__item user-menu__item--messages user-menu__item--highlighted"><i class="material-icons">chat</i></span> 
+        <span class="user-menu__item user-menu__item--notifications"><i class="material-icons">notifications_none</i></span>
+        <span class="user-menu__item user-menu__item--settings"><img src="/images/users/128.jpg" alt=""></span>
+      </div>
     </header>
+
+
     <main class="app-wrapper">
-      <div class="main-nav">
-        <a class="main-nav__item main-nav__item--active" title="Ask a Question"><i class="material-icons">chat</i></a>
-        <a class="main-nav__item" title="Find Innovators"><i class="material-icons">search</i></a>
-        <a class="main-nav__item" title="Discuss"><i class="material-icons">forum</i></a>
-        <a class="main-nav__item" title="Match Me"><i class="material-icons">people</i></a>
-        <a class="main-nav__item js-open-panel" title="Open Panel"><i class="material-icons">arrow_forward</i></a>
-      </div>
-      <div class="panel panel--1">
-        <div class="panel__content">
-          <h1>1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          <p><a class="js-open-panel-2"><i class="material-icons">arrow_forward</i></a></p>
-          <a class="js-close-panel-1"><i class="material-icons">arrow_back</i></a>
-        </div>
-      </div>
+      <nav class="main-menu">
+        <a href="./" class="main-menu__item main-menu__item--active" title="Ask a Question"><i class="material-icons">chat</i></a>
+        <a href="./search.html" class="main-menu__item" title="Find Innovators"><i class="material-icons">search</i></a>
+        <a href="" class="main-menu__item" title="Discuss"><i class="material-icons">forum</i></a>
+        <a href="" class="main-menu__item" title="Match Me"><i class="material-icons">people</i></a>
+        <a href="" class="main-menu__item js-open-panel" title="Open Panel"><i class="material-icons">arrow_forward</i></a>
+      </nav>
+
+      {% block panel_1 %}
+      
+      {% endblock %}
+
+      {% block panel_2 %}
       <div class="panel panel--2">
         <div class="panel__content">
           <h1>2</h1>
@@ -43,6 +53,9 @@
           <a class="js-close-panel-2"><i class="material-icons">arrow_back</i></a>
         </div>
       </div>
+      {% endblock %}
+
+      {% block panel_3 %}
       <div class="panel panel--3">
         <div class="panel__content">
           <h1>3</h1>
@@ -50,15 +63,37 @@
           <a class="js-close-panel-3"><i class="material-icons">arrow_back</i></a>
         </div>
       </div>
+      {% endblock %}
 
+      
+      {% block content %}
       <div class="main-content">
-        <div class="main-content__container">
-          {% for i in range(20) %}
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
+        <ul class="category-filters">
+          {% for i in categories %}
+          <li class="category-filters__item">{{i}}</li>
           {% endfor %}
-        </div>
+        </ul>
+        <ul class="main-content__container list">
+          {% for i in range(20) %}
+          <li class="list__item post-item">
+            <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+            <div class="post-item__content">
+              <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+              <h3 class="post-item__title">How do I create an open data portal?</h3>
+              <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+              <div class="post-item__controls">
+                <div class="controls">
+                  <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+                  <a href="#" class="button button--small button--alpha controls__answer-count">3 Answers</a>
+                  <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-    {% block content %}{% endblock %}
+      {% endblock %}
   </main>
     <div id="overlay" class="js-overlay"></div>
     <script src="./vendor/jquery-2.1.4.min.js"></script>
