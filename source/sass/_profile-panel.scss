@@ -7,8 +7,7 @@
   &__content { @extend .u-base-panel__content; }
 
   &__picture {
-    border-radius: 50%;
-    overflow: hidden;
+    @extend .u-circle;
     margin: 30px auto 20px;
     display: block;
   }

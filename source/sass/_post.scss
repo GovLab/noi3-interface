@@ -4,10 +4,9 @@
   display: flex;
 
   &__author-picture {
+    @extend .u-circle;
     width: 72px;
     height: 72px;
-    border-radius: 50%;
-    overflow: hidden;
     box-shadow: 2px 2px 4px rgba(black, .1);
   }
 
@@ -31,49 +30,6 @@
   }
   
   &__controls {
-
-  }
-}
-
-
-
-/* Controls */
-.controls {
-  margin-top: 18px;
-  margin-bottom: 0;
-
-  a { 
-    vertical-align: top;
-    text-decoration: none; 
-    line-height: 1rem;
-    display: inline-block;
-  }
-
-  &__icon-button {
-    @extend .button;
-    @extend .button--icon-only;
-    @extend .button--small;
-    @extend .button--alpha;
-    color: $main-color;
-    margin-right: 15px;
-    padding: 2px !important;
-  }
-  
-  &__answer-count {
-    font-weight: 600;
-    letter-spacing: 0;
-    color: $main-color;
-    text-transform: none;
-  }
-
-  &__show-more-button {
-    float: right;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgba(black, .6);
-    font-size: .9rem;
-
-    &:hover {color: rgba(black, .8);}
 
   }
 }

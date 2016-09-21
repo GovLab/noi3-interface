@@ -66,8 +66,7 @@
   &__item--highlighted { opacity: 1; }
 
   &__item--settings {
-    border-radius: 20px;
-    overflow: hidden;
+    @extend .u-circle;
     padding: 0;
   }
 

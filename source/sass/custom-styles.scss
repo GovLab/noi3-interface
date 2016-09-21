@@ -15,13 +15,17 @@ $yellow: #ff9600;
 @import "profile-panel";
 @import "list";
 @import "post";
+@import "person-item";
 @import "category-filters";
 @import "toast";
+@import "controls";
+@import "active-filters";
 
 
 // Styleguide Updates
 
-form {
+.form--negative,
+.search--negative {
   textarea {
     border-radius: 0;
   }
@@ -60,4 +64,17 @@ form {
   }
 
   &--small { padding: 6px 8px; }
+}
+
+.form {
+  .select--inline {
+    display: inline-block;
+    padding-right: 60px;
+    margin-left: 20px;
+  }
+
+  .select[disabled] {
+    pointer-events: none;
+    opacity: .4;
+  }
 }
