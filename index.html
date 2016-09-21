@@ -16,25 +16,61 @@
 
   <body class="homepage">
     
-    <header class="header">
-      <h1>Network of Innovators</h1>
+    <header class="top-bar">
+      <h1 class="top-bar__logo"><img src="/images/noi-logo-white.svg" alt="Network of Innovators"></h1>
+      <form class="top-bar__search search search--negative search--fixed js-target-search" action="">
+          <input class="search__field" type="text">
+          <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+      </form>
+      <div class="top-bar__user-menu user-menu">
+        
+        <span class="user-menu__item user-menu__item--messages user-menu__item--highlighted"><i class="material-icons">chat</i></span> 
+        <span class="user-menu__item user-menu__item--notifications"><i class="material-icons">notifications_none</i></span>
+        <span class="user-menu__item user-menu__item--settings"><img src="/images/users/128.jpg" alt=""></span>
+      </div>
     </header>
+
+
     <main class="app-wrapper">
-      <div class="main-nav">
-        <a class="main-nav__item main-nav__item--active" title="Ask a Question"><i class="material-icons">chat</i></a>
-        <a class="main-nav__item" title="Find Innovators"><i class="material-icons">search</i></a>
-        <a class="main-nav__item" title="Discuss"><i class="material-icons">forum</i></a>
-        <a class="main-nav__item" title="Match Me"><i class="material-icons">people</i></a>
-        <a class="main-nav__item js-open-panel" title="Open Panel"><i class="material-icons">arrow_forward</i></a>
-      </div>
-      <div class="panel panel--1">
-        <div class="panel__content">
-          <h1>1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          <p><a class="js-open-panel-2"><i class="material-icons">arrow_forward</i></a></p>
-          <a class="js-close-panel-1"><i class="material-icons">arrow_back</i></a>
-        </div>
-      </div>
+      <nav class="main-menu">
+        <a href="./" class="main-menu__item main-menu__item--active" title="Ask a Question"><i class="material-icons">chat</i></a>
+        <a href="./search.html" class="main-menu__item" title="Find Innovators"><i class="material-icons">search</i></a>
+        <a href="" class="main-menu__item" title="Discuss"><i class="material-icons">forum</i></a>
+        <a href="" class="main-menu__item" title="Match Me"><i class="material-icons">people</i></a>
+        <a href="" class="main-menu__item js-open-panel" title="Open Panel"><i class="material-icons">arrow_forward</i></a>
+      </nav>
+
+      
+<div class="question-panel panel panel--1 js-active">
+  
+  <h2 class="question-panel__heading question-panel__content">Ask a question</h2>
+  <p class="question-panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
+  <form action="" class="form form--negative question-panel__content question-panel__form">
+    <input type="text" placeholder="Question Title">
+    <textarea name="" id=""  placeholder="Describe your problem"></textarea>
+    <div class="select select--negative">
+      <select name="" id="">
+        <option value="">Choose a Category</option>
+        <option value="">category</option>
+        <option value="">category</option>
+        <option value="">category</option>
+      </select>
+    </div>
+    <button class="button button--full button--main-color js-open-panel-2" type="submit">Send</button>
+  </form>
+  <div class="question-panel__action question-panel__content">
+    <h4 class="question-panel__action__title js-open-action-panel">How it works</h4>
+    <div class="question-panel__action__content js-panel-action">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed, sunt quisquam, sit aspernatur quam dolor? Nostrum ea recusandae dignissimos aperiam, dolore inventore magnam dolor, natus omnis debitis voluptatem nemo!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed, sunt quisquam, sit aspernatur quam dolor? Nostrum ea recusandae dignissimos aperiam, dolore inventore magnam dolor, natus omnis debitis voluptatem nemo!</p>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+      
       <div class="panel panel--2">
         <div class="panel__content">
           <h1>2</h1>
@@ -43,6 +79,9 @@
           <a class="js-close-panel-2"><i class="material-icons">arrow_back</i></a>
         </div>
       </div>
+      
+
+      
       <div class="panel panel--3">
         <div class="panel__content">
           <h1>3</h1>
@@ -50,57 +89,354 @@
           <a class="js-close-panel-3"><i class="material-icons">arrow_back</i></a>
         </div>
       </div>
+      
 
-      <div class="main-content">
-        <div class="main-content__container">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
-          
+      
+      
+<div class="main-content">
+  <ul class="category-filters">
+    
+    <li class="category-filters__item">open data</li>
+    
+    <li class="category-filters__item">crowdsourcing</li>
+    
+    <li class="category-filters__item">data science</li>
+    
+    <li class="category-filters__item">community engagement</li>
+    
+    <li class="category-filters__item">lab design</li>
+    
+    <li class="category-filters__item">prized-challenged</li>
+    
+    <li class="category-filters__item">design thinking</li>
+    
+    <li class="category-filters__item">citizen science</li>
+    
+  </ul>
+  <ul class="main-content__container list">
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
         </div>
       </div>
+    </li>
     
-
-
-
-
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li class="list__item post-item">
+      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+      <div class="post-item__content">
+        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+        <h3 class="post-item__title">How do I create an open data portal?</h3>
+        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+        <div class="post-item__controls">
+          <div class="controls">
+            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
 
   </main>
     <div id="overlay" class="js-overlay"></div>

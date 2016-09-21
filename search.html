@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Invoice App - Interface 0.1</title>
+
+      <link rel="stylesheet" href="vendor/foundation.min.css"/>
+      <link rel="stylesheet" href="styles/custom-styles.css"/>
+      <script src="https://use.typekit.net/ioh1apd.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body class="homepage">
+    
+    <header class="top-bar">
+      <h1 class="top-bar__logo"><img src="/images/noi-logo-white.svg" alt="Network of Innovators"></h1>
+      <form class="top-bar__search search search--negative search--fixed js-target-search" action="">
+          <input class="search__field" type="text">
+          <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+      </form>
+      <div class="top-bar__user-menu user-menu">
+        
+        <span class="user-menu__item user-menu__item--messages user-menu__item--highlighted"><i class="material-icons">chat</i></span> 
+        <span class="user-menu__item user-menu__item--notifications"><i class="material-icons">notifications_none</i></span>
+        <span class="user-menu__item user-menu__item--settings"><img src="/images/users/128.jpg" alt=""></span>
+      </div>
+    </header>
+
+
+    <main class="app-wrapper">
+      <nav class="main-menu">
+        <a href="./" class="main-menu__item main-menu__item--active" title="Ask a Question"><i class="material-icons">chat</i></a>
+        <a href="./search.html" class="main-menu__item" title="Find Innovators"><i class="material-icons">search</i></a>
+        <a href="" class="main-menu__item" title="Discuss"><i class="material-icons">forum</i></a>
+        <a href="" class="main-menu__item" title="Match Me"><i class="material-icons">people</i></a>
+        <a href="" class="main-menu__item js-open-panel" title="Open Panel"><i class="material-icons">arrow_forward</i></a>
+      </nav>
+
+      
+<div class="profile-panel panel panel--1 js-active">
+  <i class="profile-panel__action-button material-icons">edit</i>
+  <img src="images/users/128.jpg" alt="" class="profile-panel__picture">
+  <hgroup class="profile-panel__titles">
+    <h2 class="profile-panel__name">Random Happy Dude</h2>
+    <h3 class="profile-panel__job">Director and Founder</h3>
+    <h4 class="profile-panel__org">UK Government</h4>  
+  </hgroup>
+  <section class="profile-panel__credentials">
+    <div class="row">
+      <div class="medium-6 small-12 column">
+        <p class="profile-panel__domains">Domains of Expertise Paruptiae latius peditatest aut maiorro eossi ini dolorrumqui deliqui demperum aspid magnatiunt</p>    
+      </div>
+      <div class="medium-6 small-12 column">
+        <p class="profile-panel__location">London, UK</p>
+        <ul class="profile-panel__lang">
+          <li class="">English</li>
+          <li class="">Spanish</li>
+          <li class="">French</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="profile-panel__projects-button">Projects <i class="material-icons js-open-panel-2">arrow_forward</i></div>
+  <div class="profile-panel__events-button">Events <i class="material-icons js-open-panel-2">arrow_forward</i></div>
+  <section class="profile-panel__expertise-panel">
+    <h5 class="profile-panel__expertise-panel-title">Expertise <i class="material-icons js-open-panel-2">arrow_forward</i></h5>
+  </section>
+</div>
+
+
+      
+      <div class="panel panel--2">
+        <div class="panel__content">
+          <h1>2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
+          <p><a class="js-open-panel-3"><i class="material-icons">arrow_forward</i></a></p>
+          <a class="js-close-panel-2"><i class="material-icons">arrow_back</i></a>
+        </div>
+      </div>
+      
+
+      
+      <div class="panel panel--3">
+        <div class="panel__content">
+          <h1>3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
+          <a class="js-close-panel-3"><i class="material-icons">arrow_back</i></a>
+        </div>
+      </div>
+      
+
+      
+      
+<div class="main-content">
+  <div class="toast toast--yellow"> 
+    <i class="material-icons toast__close">close</i>
+    <h4 class="toast__heading">Titles don’t say enough</h4>
+    <p class="toast__text">Find experts to contact based on their innovation experience</p>
+  </div>
+
+  <section class="filter-section">
+    <form action="" class="form">
+      <div class="search search--fixed js-target-search find-innovator" action="">
+        <input class="search__field" type="text" placeholder="Find an Innovator">
+        <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+      </div>
+      <p><em class="highlighted-or">OR</em> Find someone with experience in 
+      <span class="select select--inline select-innovation-area">
+        <select name="" id="">
+          <option value="">Pick an Innovation Area</option>
+          
+          
+            <option value="">open data</option>
+          
+            <option value="">crowdsourcing</option>
+          
+            <option value="">data science</option>
+          
+            <option value="">community engagement</option>
+          
+            <option value="">lab design</option>
+          
+            <option value="">prized-challenged</option>
+          
+            <option value="">design thinking</option>
+          
+            <option value="">citizen science</option>
+          
+
+        </select>
+      </span>
+      <span class="select select--inline select-innovation-area" disabled>
+        <select name="" id="">
+          <option value="">Pick an Innovation Area</option>
+          <option value="">Open Data</option>
+          <option value="">Crowdsourcing</option>
+        </select>
+      </span>
+    </form>
+
+    </p>
+  </section>
+  <section class="active-filters">
+    <span class="filter-by">Filter by</span>
+    <span class="active-filters__item">Location</span>
+    <span class="active-filters__item">Field of Work</span>
+    <span class="active-filters__item">Language</span>
+  </section>
+
+  <ul class="main-content__container list">
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li class="list__item person-item">
+      <img src="images/users/128.jpg" alt="" class="person-item__picture">
+      <div class="person-item__content">
+        <hgroup class="person-item__credentials">
+          <h2 class="person-item__name">Random Happy Dude</h2>
+          <h3 class="person-item__job">Director and Founder</h3>
+          <h4 class="person-item__org">UK Government</h4>
+        </hgroup>
+        <div class="person-item__controls">
+          <i class="person-item__pm material-icons controls__icon-button">mail_outline</i>
+        </div>
+      </div>
+      <div class="person-item__content">
+        <ul class="person-item__tags">
+          <li class="person-item__tag">Crowdsourcing</li>
+          <li class="person-item__tag">Open Data</li>
+        </ul>
+        <div class="person-item__controls">
+          <a href="#" class="person-item__projects controls__button">3 Projects</a>
+        </div>
+      </div>
+      
+    </li>
+    
+  </ul>
+</div>
+
+  </main>
+    <div id="overlay" class="js-overlay"></div>
+    <script src="./vendor/jquery-2.1.4.min.js"></script>
+    <script src="./scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+  </body>
+</html>
