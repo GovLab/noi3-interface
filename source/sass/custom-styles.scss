@@ -4,15 +4,14 @@ $main-color: #008ab3;
 $accent-color: #ff9600;
 $yellow: #ff9600;
 
-
-
-
 @import "custom";
 @import "top-bar";
 @import "main-menu";
 @import "panels";
 @import "question-panel";
 @import "profile-panel";
+@import "project-panel";
+@import "event-panel";
 @import "list";
 @import "post";
 @import "person-item";
@@ -20,15 +19,21 @@ $yellow: #ff9600;
 @import "toast";
 @import "controls";
 @import "active-filters";
+@import "tags";
+@import "filters";
 
 
 // Styleguide Updates
 
+
 .form--negative,
 .search--negative {
-  textarea {
-    border-radius: 0;
+  .select {
+    background-color: rgba($white, .1);
+    &:before { color: $white;}  
   }
+
+  textarea { border-radius: 0; }
 
   input[type='text']:focus,
   textarea:focus,
@@ -37,13 +42,13 @@ $yellow: #ff9600;
     outline: 1px solid rgba($white, .3);
     background-color: rgba($white, .1) !important;
   }
-  .search-trigger { background-color: rgba($white, .1) !important; }
 
-  .select--negative {
-    background-color: rgba($white, .1);
-    &:before { color: $white;}
+  .button:hover {
+    background-color: $accent-color;
   }
 }
+
+
 
 .button {
   &--full {
@@ -77,4 +82,8 @@ $yellow: #ff9600;
     pointer-events: none;
     opacity: .4;
   }
+}
+
+.select:before {
+  pointer-events: none;
 }

@@ -1,7 +1,5 @@
 {% extends '_base.html' %}
-{% block body_class %}homepage{% endblock %}
-{% block data %}{% endblock %}
-
+{% block body_class %}search{% endblock %}
 
 {% block panel_1 %}
 <div class="profile-panel panel panel--1 js-active">
@@ -27,15 +25,34 @@
       </div>
     </div>
   </section>
-  <div class="profile-panel__projects-button">Projects <i class="material-icons js-open-panel-2">arrow_forward</i></div>
-  <div class="profile-panel__events-button">Events <i class="material-icons js-open-panel-2">arrow_forward</i></div>
+  <div class="profile-panel__projects-button">
+    {# == This <a> tag is for prototype navigation purposes only. It should not make it to the final app == #}
+    <a href="partial-projects.html">Projects <i class="material-icons js-open-panel-2">arrow_forward</i></a>
+  </div>
+  <div class="profile-panel__events-button">
+    {# == This <a> tag is for prototype navigation purposes only. It should not make it to the final app == #}
+    <a href="partial-events.html">Events <i class="material-icons js-open-panel-2">arrow_forward</i></a>
+  </div>
   <section class="profile-panel__expertise-panel">
     <h5 class="profile-panel__expertise-panel-title">Expertise <i class="material-icons js-open-panel-2">arrow_forward</i></h5>
+    <div class="profile-panel__content">
+      <ul class="category-tags category-tags--negative">
+        <li class="category-tag">
+          <span class="category-tag__main">Open Data</span>
+          <span class="category-tag__sub">Implementation</span>
+        </li>
+        <li class="category-tag__skills">View Skills (10)</li>
+        <li class="category-tag">
+          <span class="category-tag__main">Crowdsourcing</span>
+          <span class="category-tag__sub">Design</span>
+          <span class="category-tag__sub">Implementation</span>
+        </li>
+        <li class="category-tag__skills">View Skills (4)</li>
+      </ul>  
+    </div>
   </section>
 </div>
 {% endblock %}
-
-
 
 {% block content %}
 <div class="main-content">
@@ -45,7 +62,7 @@
     <p class="toast__text">Find experts to contact based on their innovation experience</p>
   </div>
 
-  <section class="filter-section">
+  <section class="filter-section main-content__container">
     <form action="" class="form">
       <div class="search search--fixed js-target-search find-innovator" action="">
         <input class="search__field" type="text" placeholder="Find an Innovator">
@@ -95,9 +112,16 @@
         </div>
       </div>
       <div class="person-item__content">
-        <ul class="person-item__tags">
-          <li class="person-item__tag">Crowdsourcing</li>
-          <li class="person-item__tag">Open Data</li>
+        <ul class="person-item__tags category-tags">
+          <li class="person-item__tag category-tag">
+            <span class="category-tag__main">Crowdsourcing</span>
+            <span class="category-tag__sub">Design</span>
+          </li>
+          <li class="person-item__tag category-tag">
+            <span class="category-tag__main">Open Data</span>
+            <span class="category-tag__sub">Design</span>
+            <span class="category-tag__sub">Implementation</span>
+          </li>
         </ul>
         <div class="person-item__controls">
           <a href="#" class="person-item__projects controls__button">3 Projects</a>
