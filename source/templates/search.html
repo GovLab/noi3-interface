@@ -33,8 +33,11 @@
     {# == This <a> tag is for prototype navigation purposes only. It should not make it to the final app == #}
     <a href="partial-events.html">Events <i class="material-icons js-open-panel-2">arrow_forward</i></a>
   </div>
+  {# IF EXPERTISE #}
   <section class="profile-panel__expertise-panel">
-    <h5 class="profile-panel__expertise-panel-title">Expertise <i class="material-icons js-open-panel-2">arrow_forward</i></h5>
+    <h5 class="profile-panel__expertise-panel-title">
+      <a href="partial-expertise.html">Expertise <i class="material-icons js-open-panel-2">arrow_forward</i></a>
+    </h5>
     <div class="profile-panel__content">
       <ul class="category-tags category-tags--negative">
         <li class="category-tag">
@@ -48,9 +51,15 @@
           <span class="category-tag__sub">Implementation</span>
         </li>
         <li class="category-tag__skills">View Skills (4)</li>
-      </ul>  
+      </ul>
     </div>
   </section>
+  {# ELSE #}
+  <div class="profile-panel__add-item">
+    <i class="big-icon material-icons">add</i>
+    <h4>Add Expertise</h4>
+  </div>
+  {# ENDIF #}
 </div>
 {% endblock %}
 

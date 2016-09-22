@@ -67,21 +67,18 @@
 }
 
 
-
-
+// Panel structure and behavior related styles
 
 .panel {
-  width: 440px;
-  margin-left: -440px;
+  width: 400px;
+  margin-left: -400px;
   position: relative;
+  overflow-y: scroll;
   @extend .u-transition;
 
   &--1 {
     background-color: #222;
     z-index: 9;
-    width: 480px;
-    margin-left: -480px;
-
   }
   &--2 {
     background-color: #292929;

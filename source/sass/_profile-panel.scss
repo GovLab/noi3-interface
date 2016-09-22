@@ -107,4 +107,31 @@
   &--success__icon {}
 
   &__action-button { @extend .u-base-panel__action-button; }
+
+  &__add-item {
+    @extend .u-base-panel__content;
+    text-align: center;
+    background-color: rgba(white, .05);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    cursor: pointer;
+
+    .big-icon {
+      background-color: white;
+      color: black;
+    }
+
+    h4 {
+      font-size:  1rem;
+      font-weight: 800;
+    }
+
+    > * {
+      opacity: .1;
+    }
+
+    &:hover > * {
+      opacity: .5;
+    }
+  }
 }
