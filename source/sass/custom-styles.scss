@@ -3,6 +3,7 @@
 $main-color: #008ab3;
 $accent-color: #ff9600;
 $yellow: #ff9600;
+$green: #4b7e4b;
 
 @import "custom";
 @import "top-bar";
@@ -10,6 +11,7 @@ $yellow: #ff9600;
 @import "panels";
 @import "question-panel";
 @import "profile-panel";
+@import "signup-panel";
 @import "project-panel";
 @import "expertise-panel";
 @import "event-panel";
@@ -36,7 +38,7 @@ $yellow: #ff9600;
 
   textarea { border-radius: 0; }
 
-  input[type='text']:focus,
+  input:focus,
   textarea:focus,
   .select:focus,
   .search-trigger:focus {
@@ -46,6 +48,19 @@ $yellow: #ff9600;
 
   .button:hover {
     background-color: $accent-color;
+  }
+}
+
+.form--negative {
+  input { color: $white; }
+
+  input[type='password'] {
+    background-color: $white-10;
+    @include placeholder { color: $white; }
+    &:focus {
+        background-color: $white-20;
+        @extend .u-transition;
+    }
   }
 }
 
@@ -71,6 +86,8 @@ $yellow: #ff9600;
 
   &--small { padding: 6px 8px; }
 }
+
+
 
 .form {
   .select--inline {
