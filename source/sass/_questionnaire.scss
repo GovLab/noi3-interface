@@ -1,0 +1,60 @@
+.questionnaire {
+  &__title {
+    color: rgba(black, .5);
+    padding: 20px 60px 10px 120px;
+    font-size: 1.1rem;
+  }
+
+  &__check-all {
+    float: right;
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 300;
+  }
+
+  &__item {
+    padding: 0 40px;
+  }
+
+  &__item--submit {
+    padding: 0 60px 0 120px;
+    text-align: right;
+
+
+  }
+
+  &__item:nth-of-child(even) {
+    background-color: rgba(black, .03);
+  }
+
+
+  &__item__checkbox {
+    display: none;
+  }
+
+  &__item__label {
+    display: block;
+    padding: 20px;
+    font-weight: 600;
+    padding-left: 80px;
+    position: relative;
+
+    &:before {
+      content: 'check';
+      @extend .u-material-icons;
+      position: absolute;
+      left: 30px;
+      top: 17px;
+      color: $green;
+      display: none;
+    }
+  }
+
+  &__item__checkbox:checked ~ &__item__label {
+    background-color: rgba($green, .2);
+    color: $green;
+    
+    &:before { display: block !important; }
+  }
+  
+}
