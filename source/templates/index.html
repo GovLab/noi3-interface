@@ -4,7 +4,7 @@
 
 
 {% block panel_1 %}
-<div class="question-panel panel panel--1 js-active">
+<div class="question-panel panel panel--1">
   
   <h2 class="question-panel__heading question-panel__content">Ask a question</h2>
   <p class="question-panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, excepturi assumenda accusantium dolore quas aut fugit quibusdam odit sunt adipisci hic beatae distinctio? Tenetur, harum? Nihil commodi, culpa soluta.</p>
@@ -36,29 +36,43 @@
 
 {% block content %}
 <div class="main-content">
+  {# Category Filters for mobile only #}
+  <div class="select category-filters-mobile">
+    <select name="" id="">
+      {% for i in categories %}
+      <option>{{i}}</li>
+      {% endfor %}
+    </select>
+  </div>
+  
+  {# Category Filters for tablet and up #}
   <ul class="category-filters">
     {% for i in categories %}
     <li class="category-filters__item">{{i}}</li>
     {% endfor %}
   </ul>
-  <ul class="main-content__container list">
-    {% for i in range(20) %}
-    <li class="list__item post-item">
-      <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
-      <div class="post-item__content">
-        <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
-        <h3 class="post-item__title">How do I create an open data portal?</h3>
-        <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
-        <div class="post-item__controls">
-          <div class="controls">
-            <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
-            <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
-            <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+  
+
+  <section class="main-content__container">
+    <ul class="list post-list">
+      {% for i in range(20) %}
+      <li class="list__item post-item">
+        <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
+        <div class="post-item__content">
+          <p class="post-item__author-name"><strong>Sarah Stoker</strong> asked:</p>
+          <h3 class="post-item__title">How do I create an open data portal?</h3>
+          <p>Ovitatur, nos re, quis dolorit alibus, nobissit que re, con nobitassin perempore comnitiae posaniate ne non et ape nos nistor aut aute omnimusdae apit, nobit quamet audigenis doluptatur, ommolorerit ut quat tisita quasperferum dolumquam reruptibus exeriomagn...</p>
+          <div class="post-item__controls">
+            <div class="controls">
+              <a href="#" class="controls__icon-button"><i class="material-icons">reply</i></a>
+              <a href="#" class="button button--small button--alpha controls__button">3 Answers</a>
+              <a href="#" class="button button--small button--alpha controls__show-more-button">Show More</a>
+            </div>
           </div>
         </div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>
 {% endblock %}

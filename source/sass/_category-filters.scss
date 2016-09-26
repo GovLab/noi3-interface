@@ -1,4 +1,6 @@
 .category-filters {
+  @include breakpoint($small-only) { display: none;}
+
   padding: 0;
   margin: 0;
   display: flex;
@@ -6,14 +8,8 @@
 
   &__item {
     padding: 0;
-    @include breakpoint($small-only) {
-      width: 50%;
-      padding: 15px;
-    }
-    @include breakpoint($medium) {
-      width: 25%;
-      padding: 10px;
-    }
+    width: 25%;
+    padding: 10px;
     list-style: none;
     font-size: .7rem;
     margin: 0;
@@ -23,13 +19,6 @@
     text-transform: uppercase;
     color: $white;
     font-weight: 600;
-    
-    @include breakpoint($small-only) {
-      &:nth-of-type(1) { background-color: darken($main-color, 2); }
-      &:nth-of-type(4) { background-color: darken($main-color, 2); }
-      &:nth-of-type(5) { background-color: darken($main-color, 2); }
-      &:nth-of-type(8) { background-color: darken($main-color, 2); }
-    }
 
     @include breakpoint($medium) {
       &:nth-of-type(1) { background-color: darken($main-color, 2); }
@@ -44,3 +33,7 @@
 
 }
 
+.category-filters-mobile {
+  margin: 0;
+  @include breakpoint($medium) { display: none; }
+}
