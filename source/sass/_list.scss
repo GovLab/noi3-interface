@@ -4,6 +4,9 @@
   margin: 0;
 
   &__item {
+    @include breakpoint($small-only) {
+      padding: 15px;  
+    }
     padding: 25px 35px;
     list-style: none;
 
