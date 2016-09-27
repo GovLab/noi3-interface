@@ -36,6 +36,7 @@
       display: block;
       font-size: 1.35rem;
       white-space: nowrap;
+      @include breakpoint($small-only) { display: none; }
     }    
 
     &:hover:after {
