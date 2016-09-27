@@ -84,18 +84,18 @@
 
   &--1 {
     background-color: #222;
-    z-index: 9;
+    z-index: 50;
     @include breakpoint($large) { margin-left: 0; }
   }
 
   &--2 {
     background-color: #292929;
-    @include breakpoint($large) { z-index: 8; }
+    @include breakpoint($large) { z-index: 49; }
   }
 
   &--3 {
     background-color: #333;
-    @include breakpoint($large) { z-index: 7; }
+    @include breakpoint($large) { z-index: 48; }
   }
 
   &.js-active { 
