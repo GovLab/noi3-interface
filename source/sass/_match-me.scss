@@ -21,6 +21,10 @@
     font-size: 1.4rem;
     text-align: center;
     
+    @include breakpoint($medium) {
+      font-size: 1.8rem;
+    }
+
     @include breakpoint($large) {
       font-size: 2rem;
       margin-bottom: 40px;
@@ -37,7 +41,7 @@
     padding: 8px;
     background-color: rgba($main-color, .2);
 
-    @include breakpoint($large) {
+    @include breakpoint($medium) {
       font-size: 3rem;
       margin-bottom: 20px;
       margin-top: 20px;

@@ -1,24 +1,22 @@
 .person-item {
-  @include breakpoint($medium) { display: flex; }
+  @include breakpoint($large) { display: flex; }
   @include breakpoint($small-only) { position: relative;}
 
   &__picture {
     @extend .u-circle;
-    width: 100px;
-    height: 100px;
-
-
-    @include breakpoint($small-only) {
-      width: 40px;
-      height: 40px;
-      float: left;
+    @include breakpoint($medium) {
+      width: 100px;
+      height: 100px;
     }
+    
+    width: 40px;
+    height: 40px;
+    float: left;
   }
 
   &__content {
-    padding-left: 60px;
-
-    @include breakpoint($medium) { 
+    @include breakpoint($small-only) {padding-left: 60px;}
+    @include breakpoint($large) { 
       flex: 1;
       display: flex; 
       flex-direction: column;
@@ -28,11 +26,13 @@
   }
 
   &__credentials { 
-    @include breakpoint($medium) { flex: 1; }
+    @include breakpoint($large) { flex: 1; }
   }
   
-  &__tags { 
-    
+  &__credentials,
+  &__tags,
+  &__controls { 
+   @include breakpoint($medium) { padding-left: 140px; } 
   }
 
   &__name {

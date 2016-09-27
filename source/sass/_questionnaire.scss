@@ -11,7 +11,8 @@
     vertical-align: baseline;
 
     &:not(:first-of-type) {
-      @include breakpoint($small-only) { margin-top: 20px; }
+      margin-top: 20px;
+      @include breakpoint($large) { margin-top: 0; }
     }
 
     @include breakpoint($large) {
@@ -29,6 +30,7 @@
   }
 
   &__item {
+    padding: 0;
     @include breakpoint($large) { padding: 0 40px; }
   }
 

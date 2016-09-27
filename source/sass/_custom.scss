@@ -20,19 +20,23 @@ body {
 }
 
 .app-wrapper {
-  display: flex;
+  @include breakpoint($medium) {
+    display: flex;
+  }
   height: calc(100vh - 60px);
   overflow: hidden;
+  
 }
 
 .main-content {
-  overflow-y: scroll;
   overflow-x: hidden;
   flex: 1;
 
   &__container { 
-    min-width: 750px;
+    @include breakpoint($large) { min-width: 750px; }
+    @include breakpoint($small-only) { height: calc(100vh - 157px); }
     display: block;
+    overflow-y: scroll;
   }
 }
 
