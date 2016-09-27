@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>NOI 3.0 - Interface</title>
+
+      <link rel="stylesheet" href="vendor/foundation.min.css"/>
+      <link rel="stylesheet" href="styles/custom-styles.css"/>
+      <script src="https://use.typekit.net/ioh1apd.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body class="search-page">
+    
+    <header class="top-bar">
+      <h1 class="top-bar__logo"><img src="images/noi-logo-white.svg" alt="Network of Innovators"></h1>
+      
+      <form class="top-bar__search search search--negative search--fixed js-target-search" action="">
+          <input class="search__field" type="text">
+          <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+      </form>
+      <div class="top-bar__user-menu user-menu">
+        
+        <span class="user-menu__item user-menu__item--messages user-menu__item--highlighted"><i class="material-icons">chat</i></span> 
+        <span class="user-menu__item user-menu__item--notifications"><i class="material-icons">notifications_none</i></span>
+        <span class="user-menu__item user-menu__item--settings js-open-panel-1"><img src="images/users/128.jpg" alt=""></span>
+      </div>
+    </header>
+
+
+    <main class="app-wrapper">
+      <nav class="main-menu">
+        <a href="./" class="main-menu__item main-menu__item--active" title="Ask a Question"><i class="material-icons">chat</i></a>
+        <a href="search.html" class="main-menu__item" title="Find Innovators"><i class="material-icons">search</i></a>
+        <a href="#" class="main-menu__item" title="Discuss"><i class="material-icons">forum</i></a>
+        <a href="match-me.html" class="main-menu__item" title="Match Me"><i class="material-icons">people</i></a>
+        <a href="all-pages.html" class="main-menu__item" title="All Pages"><i class="material-icons">help</i></a>
+      </nav>
+
+      
+<div class="profile-panel panel panel--1">
+  <i class="profile-panel__action-button material-icons">edit</i>
+  <img src="images/users/128.jpg" alt="" class="profile-panel__picture">
+  <hgroup class="profile-panel__titles">
+    <h2 class="profile-panel__name">Random Happy Dude</h2>
+    <h3 class="profile-panel__job">Director and Founder</h3>
+    <h4 class="profile-panel__org">UK Government</h4>  
+  </hgroup>
+  <section class="profile-panel__credentials">
+    <div class="row">
+      <div class="medium-6 small-12 column">
+        <p class="profile-panel__domains">Domains of Expertise Paruptiae latius peditatest aut maiorro eossi ini dolorrumqui deliqui demperum aspid magnatiunt</p>    
+      </div>
+      <div class="medium-6 small-12 column">
+        <p class="profile-panel__location">London, UK</p>
+        <ul class="profile-panel__lang">
+          <li class="">English</li>
+          <li class="">Spanish</li>
+          <li class="">French</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="profile-panel__projects-button">
+    
+    <a href="partial-projects.html">Projects <i class="material-icons js-open-panel-2">arrow_forward</i></a>
+  </div>
+  <div class="profile-panel__events-button">
+    
+    <a href="partial-events.html">Events <i class="material-icons js-open-panel-2">arrow_forward</i></a>
+  </div>
+  
+  <section class="profile-panel__expertise-panel">
+    <h5 class="profile-panel__expertise-panel-title">
+      <a href="partial-expertise.html">Expertise <i class="material-icons js-open-panel-2">arrow_forward</i></a>
+    </h5>
+    <div class="profile-panel__content">
+      <ul class="category-tags category-tags--negative">
+        <li class="category-tag">
+          <span class="category-tag__main">Open Data</span>
+          <span class="category-tag__sub">Implementation</span>
+        </li>
+        <li class="category-tag__skills">View Skills (10)</li>
+        <li class="category-tag">
+          <span class="category-tag__main">Crowdsourcing</span>
+          <span class="category-tag__sub">Design</span>
+          <span class="category-tag__sub">Implementation</span>
+        </li>
+        <li class="category-tag__skills">View Skills (4)</li>
+      </ul>
+    </div>
+  </section>
+  
+  <div class="profile-panel__add-item">
+    <i class="big-icon material-icons">add</i>
+    <h4>Add Expertise</h4>
+  </div>
+  
+</div>
+
+
+      
+      
+      
+
+      
+
+      
+
+      
+      
+
+<div class="main-content match-me">
+  <div class="main-content__container">
+    <h3 class="match-me__intro">Your matches are people who have experience in what you want to learn <br> and have something to learn from you.</h3>
+    <div class="steps">
+      <span class="steps__item steps--done"></span>
+      <span class="steps__item steps--done"></span>
+      <span class="steps__item steps--done steps--current"></span>
+      <span class="steps__item"></span>
+    </div>
+
+    <h4 class="match-me__question-pre">Great! Now tell us how you can be helpful to someone else.</h4>
+    
+    <h2 class="match-me__question">I have experience & can advise others on</h2>
+
+    <ul class="category-buttons">
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">open data</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">crowdsourcing</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">data science</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">community engagement</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">lab design</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">prized-challenged</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">design thinking</a></li>
+      
+      <li class="category-buttons__item"><a href="match-me-4.html">citizen science</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+  </main>
+    <div id="overlay" class="js-overlay"></div>
+    <script src="./vendor/jquery-2.1.4.min.js"></script>
+    <script src="./scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+  </body>
+</html>
