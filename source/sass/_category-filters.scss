@@ -35,5 +35,11 @@
 
 .category-filters-mobile {
   margin: 0;
+  background-color: rgba($main-color, .2);
+  color: $main-color;
+  font-weight: 600;
+
+  &:before { color: $main-color; }
+    
   @include breakpoint($medium) { display: none; }
 }
