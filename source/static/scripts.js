@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-$('.js-open-panel').click(function (e) {
+$('.js-open-panel-1').click(function (e) {
     e.preventDefault();
     $('.panel--1').toggleClass('js-active');
 });

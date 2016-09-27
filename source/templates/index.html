@@ -36,25 +36,23 @@
 
 {% block content %}
 <div class="main-content">
-  {# Category Filters for mobile only #}
-  <div class="select category-filters-mobile">
-    <select name="" id="">
-      {% for i in categories %}
-      <option>{{i}}</li>
-      {% endfor %}
-    </select>
-  </div>
-  
-  {# Category Filters for tablet and up #}
-  <ul class="category-filters">
-    {% for i in categories %}
-    <li class="category-filters__item">{{i}}</li>
-    {% endfor %}
-  </ul>
-  
-
   <section class="main-content__container">
-    <ul class="list post-list">
+    {# Category Filters for mobile only #}
+    <div class="select category-filters-mobile">
+      <select name="" id="">
+        {% for i in categories %}
+        <option>{{i}}</li>
+        {% endfor %}
+      </select>
+    </div>
+    
+    {# Category Filters for tablet and up #}
+    <ul class="category-filters">
+      {% for i in categories %}
+      <li class="category-filters__item">{{i}}</li>
+      {% endfor %}
+    </ul>
+    <ul class="list">
       {% for i in range(20) %}
       <li class="list__item post-item">
         <img src="images/users/128.jpg" alt="" class="post-item__author-picture">
