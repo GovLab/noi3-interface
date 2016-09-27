@@ -1,8 +1,22 @@
 .questionnaire {
+  .list__item {
+    @include breakpoint($small-only) { padding: 0; } // ugly solution
+  }
+
   &__title {
     color: rgba(black, .5);
-    padding: 20px 60px 10px 120px;
+    padding: 10px;
     font-size: 1.1rem;
+    margin: 0;
+    vertical-align: baseline;
+
+    &:not(:first-of-type) {
+      @include breakpoint($small-only) { margin-top: 20px; }
+    }
+
+    @include breakpoint($large) {
+      padding: 20px 60px 10px 120px;
+    }
   }
 
   &__check-all {
@@ -10,17 +24,27 @@
     font-size: 1rem;
     text-transform: none;
     font-weight: 300;
+    vertical-align: baseline;
+    @include breakpoint($small-only) { margin-top: -4px; }
   }
 
   &__item {
-    padding: 0 40px;
+    @include breakpoint($large) { padding: 0 40px; }
   }
 
   &__item--submit {
     padding: 0 60px 0 120px;
     text-align: right;
-
-
+    
+    > .button {
+      @include breakpoint($small-only) { 
+        width: calc(100% - 20px);
+        margin: 15px 10px 0;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+    
   }
 
   &__item:nth-of-child(even) {
@@ -34,13 +58,18 @@
 
   &__item__label {
     display: block;
-    padding: 20px;
-    font-weight: 600;
-    padding-left: 80px;
+    padding: 10px;
+    
+    
+    @include breakpoint($large) { 
+      font-weight: 600;
+      padding: 20px 20px 20px 80px;
+    }
+    
     position: relative;
 
     &:before {
-      content: 'check';
+      @include breakpoint($large) { content: 'check'; }
       @extend .u-material-icons;
       position: absolute;
       left: 30px;
