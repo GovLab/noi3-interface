@@ -7,10 +7,12 @@ $green: #4b7e4b;
 
 @import "custom";
 @import "top-bar";
+
 @import "main-menu";
 @import "panels";
 @import "question-panel";
 @import "profile-panel";
+@import "tags";
 @import "signup-panel";
 @import "project-panel";
 @import "expertise-panel";
@@ -23,7 +25,6 @@ $green: #4b7e4b;
 @import "toast";
 @import "controls";
 @import "active-filters";
-@import "tags";
 @import "filters";
 @import "steps";
 @import "questionnaire";
@@ -104,11 +105,7 @@ $green: #4b7e4b;
 
 
 .form {
-  .select--inline {
-    display: inline-block;
-    padding-right: 60px;
-    margin-left: 20px;
-  }
+  
 
   .select[disabled] {
     pointer-events: none;

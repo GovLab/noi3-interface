@@ -33,8 +33,10 @@ body {
   flex: 1;
 
   &__container { 
-    @include breakpoint($large) { min-width: 750px; }
     @include breakpoint($small-only) { height: calc(100vh - 157px); }
+    @include breakpoint($medium) { min-width: 650px; }
+    @include breakpoint($large) { min-width: 750px; }
+    
     display: block;
     overflow-y: scroll;
   }
