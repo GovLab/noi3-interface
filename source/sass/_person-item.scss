@@ -33,6 +33,7 @@
   &__tags,
   &__controls { 
    @include breakpoint($medium) { padding-left: 140px; } 
+   @include breakpoint($large) { padding-left: 40px; } 
   }
 
   &__name {
